@@ -5,9 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<title>reveal.js</title>
-
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="./style.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -23,9 +23,52 @@
 	</head>
 	<body>
 		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+			<div id="scott" class="slides">
+				<section class="thirds">
+					<img class="fragment" src="./content/image3.jpeg">
+					<img class="fragment" src="./content/image4.jpeg">
+					<img class="fragment" src="./content/image2.jpeg">
+				</section>
+				<section>
+					<img src="./content/image5.jpg">
+				</section>
+				<section class="thirds">
+					<img src="./content/image6.jpg">
+					<img src="./content/image7.jpg">
+					<img src="./content/image8.jpg">
+				</section>
+				<section>
+					<img src="./content/image9.jpg">
+				</section>
+				<section>
+					<img src="./content/image10.jpeg">
+				</section>
+				<section 
+					data-background-video="./content/media1.mp4" 
+					data-background-size="contain">
+				</section>
+				<section>
+					<div id="award" class="award-border">
+						<div>
+							<div class="header">
+								<h1>Best Looking Boy Award</h1>
+								<h3>Stretford Grammar School</h3>
+								<p><i>Year 2016</i></p>
+							</div>
+							<div class="footer">
+								<img class="school-logo" src="./content/image13.png">
+								<h1>David Martin</h1>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+						<img src="./content/image14.jpeg">
+					</section>
+				<section 
+					data-background-video="./content/media2.mp4" 
+					data-background-size="contain">
+				</section>
 			</div>
 		</div>
 
@@ -37,6 +80,9 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				autoPlayMedia: true,
+				controls: false,
+				width: 1500,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
